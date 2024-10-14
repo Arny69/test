@@ -1,10 +1,37 @@
-<!DOCTYPE HTML>
-<html>
-<head> 
- 
-  <h1>This is arnas' website</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .output {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Character Display</h1>
+    <div class="output" id="output"></div>
 
+    <script>
+        const character = "#";
+        const count = 8;
+
+        const rows = [];
+        for (let i = 0; i < count; i++) {
+            rows.push(character);
+        }
+
+        document.getElementById("output").textContent = rows.join('');
+    </script>
 
 </body>
 </html>
